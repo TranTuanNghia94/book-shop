@@ -1,0 +1,102 @@
+﻿@using DoAn.Models;
+@{
+    ViewBag.Title = "Customer_Info";
+}
+<link href="~/Content/Main.css" rel="stylesheet" />
+<script src="~/scripts/Customer.js"></script>
+<script src="~/scripts/jquery-3.4.1.min.js"></script>
+<link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+
+
+<div class="contain">
+    <div class="row-div">
+        <div class="col-3">
+            <h2 class="center-text">MY INFORMATION</h2>
+
+            <div class="center-text">
+
+                <!-- FULL NAME -->
+                <p>
+                    <b>Full name: @ViewBag.Customer.last_name @ViewBag.Customer.first_name </b>
+                </p>
+
+                <!-- DATE OF BIRTH -->
+                <p>
+                    <b>date of birth: @ViewBag.Customer.date </b>
+                </p>
+
+                <!-- PHONE -->
+                <p>
+                    <b>Phone: @ViewBag.Customer.phone </b>
+                </p>
+
+                <!-- EMAIL -->
+                <p>
+                    <b>Email: @ViewBag.customer.email </b>
+                </p>
+
+                <!-- ADDRESS -->
+                <p>
+                    <b>Address: @ViewBag.Customer.address </b>
+                </p>
+            </div>
+        </div>
+
+        <div class="col-7">
+            <h2 class="center-text">MY LIST BILLS</h2>
+          
+            <div class="center-text">
+
+                <!-- TABLE LIST BILLS -->
+                <table class="table table-border" style="width: 900px" id="table_bill">
+                    <thead>
+                        <tr class="center-text">
+                            <th style="background-color:#333; color: white;">Date</th>
+                            <th style="background-color:#333; color: white;">Product Name</th>
+                            <th style="background-color:#333; color: white;">Quantity</th>
+                            <th style="background-color:#333; color: white;">Price</th>
+                            <th style="background-color:#333; color: white;">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+               
+                </table>
+            </div>
+        
+            <!-- PAGE NUMBER -->
+            <div class="contain center-text" style="margin-top: 50px;">
+                @if (ViewBag.Page == null)
+                {
+                    <button class="btn-black">0</button>
+                }
+                @if (ViewBag.Page != null)
+                {
+                    for (int i = 1; i <= ViewBag.Page; i++)
+                    {
+                        <button class="btn-black page-number">@i</button>
+                    }
+                }
+            </div>
+            <!-- ----------------------- -->
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function () {
+        $(".page-number").click(function () {
+            var page = parseInt($(this).html());
+            change_page(page);
+        });
+        function change_page(page) {
+            var number = page || 1;
+            Get_Bill(number);
+        }
+        change_page();
+
+    })
+</script>
+
+
+

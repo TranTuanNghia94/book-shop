@@ -1,0 +1,334 @@
+﻿@using DoAn.Models
+@using DoAn.Models.Action
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BOOK SHOP</title>
+<script src="~/scripts/Customer.js"></script>
+<script src="~/scripts/Book.js"></script>
+<script src="~/scripts/jquery-3.4.1.min.js"></script>
+<link href="~/Content/Main.css" rel="stylesheet" />
+<link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+
+
+<!-- MENU BAR  -->
+<ul class="topnav">
+
+    <!-- LOGO HOME -->
+    <li>
+        <a class="fa fa-home icon" href="~/Book/ShowBook"></a>
+    </li>
+
+    @if (Session["id"] == null || (Session["id"] != null && (string)Session["role"] == "guest" && Convert.ToInt32(Session["id"]) != 1))
+    {
+        <li>
+            <a href="#news">Best Selling</a>
+        </li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">
+                Category <i class="fa fa-angle-down"></i>
+            </a>
+            <!--  LIST GENRE -->
+            <div class="dropdown-content">
+                @{ 
+                    List<Genre> item = GenreAction.Get_All_Genre();
+                    for(int i = 0; i < item.Count; i++)
+                    {
+                        <a  href="#" onclick="get_book_by_genre('@item[i].genre')">@item[i].genre</a>
+                    }
+                }
+            </div>
+        </li>
+
+        <!-- LOGO HOME -->
+        <li class="logo">
+            <a href="~/Book/ShowBook">Book Shop</a>
+        </li>
+    }
+   
+    @if (((string)Session["role"] == "admin" || Convert.ToInt32(Session["id"]) == 1) && Session["id"] != null)
+    {
+        <!-- BUTTON BOOK MANAGER -->
+        <li>
+            <a href="~/Book/BookManager/@Session["id"]">Book Manager</a>
+        </li>
+
+        <!-- BUTTON cUSTOMER MANAGER -->
+        <li>
+            <a href="~/Customer/Index/@Session["id"]">Customer Manager</a>
+        </li>
+
+        <!-- BUTTON RESTORE DATA -->
+        <li>
+            <a href="~/Home/RestoreData">Restore</a>
+        </li>
+
+        <!-- BUTTON HISTORY -->
+        <li>
+            <a href="~/Home/RecordUser">History</a>
+        </li>
+
+        <!-- BUTTON REPORT -->
+        <li>
+            <a href="~/Report/BestSellBook">Report</a>
+        </li>
+
+        <!-- BUTTON CHART -->
+        <li>
+            <a href="~/Report/ChartView">Chart</a>
+        </li>
+    }
+
+
+    @if (Session["id"] != null && (string)Session["role"] == "guest")
+    {
+        <!-- LOGO CART -->
+        <li class="right">
+            <a class="fa fa-shopping-basket icon" href="~/Cart/XemGioHang"></a>
+        </li>
+
+        <li class="right dropdown">
+            <a href="javascript:void(0)" class="dropbtn fa fa-user-circle-o icon"></a>
+            <div class="dropdown-content-horizontal">
+
+                <!-- CUSTOMER INFORMATION -->
+                <a href="~/Customer/Customer_Info/@Session["id"]">
+                    My Information
+                </a>
+
+                <!-- UPDATE CUSTOEMR INFORMATION -->
+                <a href="~/Customer/EditCustomer/@Session["id"]" onclick="GetCustomer(@Session["id"])">
+                    Update Info
+                </a>
+
+                <!-- BUTTON LOGOUT -->
+                <a href="~/Home/Logout">
+                    Logout
+                </a>
+            </div>
+        </li>
+    }
+    @if (Session["id"] == null)
+    {
+        <li class="right" >
+            <a id="myBtn">Registation</a>
+        </li>
+        <li class="right">
+            <a id="btnLogin">Login</a>
+        </li>
+    }
+    @if (Session["id"] != null && (string)Session["role"] == "admin")
+    {
+        <li class="right">
+            <a href="~/Home/Logout">
+                Logout
+            </a>
+        </li>
+    }
+    
+</ul>
+<!-- ----------------------------------------------- -->
+
+
+
+<!--  MODAL REGISTER  -->
+<div id="myModal" class="modal-div" hidden>
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <span id="close" class="close">&times;</span>
+            <h2 class="center-text">REGISTATION</h2>
+        </div>
+        <div class="modal-body center-text">
+
+            <!-- FORM REGISTER -->
+            <form action="~/Customer/Register" method="post">
+               <p id="valid_mail" style="color:red"></p>
+
+                <!-- EMAIL -->
+               <div class="group-input center-form">
+                    <span class="span-input">Email</span>
+                    <input type="text" id="Email" name="Email"  class="input-form select-font" required />
+               </div>
+                    
+                <!-- FIRST NAME -->
+               <div class="group-input center-form">
+                    <span class="span-input">
+                        First Name
+                    </span>
+                    <input type="text"  name="First_name" class="input-form select-font" required />
+               </div>
+
+                <!-- LAST NAME -->
+               <div class="group-input center-form">
+                    <span class="span-input">
+                        Last Name
+                    </span>
+                    <input type="text"  name="Last_name" class="input-form select-font" required />
+               </div>
+
+                <!-- PASSWORD -->
+               <div class="group-input center-form">
+                    <span class="span-input">
+                        Password
+                    </span>
+                   <input type="password"  name="Password" class="input-form select-font" required />
+                </div>
+                    
+                <!-- ADDRESS -->
+                <div class="group-input center-form">
+                        <span class="span-input">
+                            Address
+                        </span>
+                    <input type="text"  name="Address" class="input-form select-font" required />
+                </div>
+
+                <!-- DATE OF BIRTH -->
+                <div class="group-input center-form">
+                    <span class="span-input">
+                        Date
+                    </span>
+                    <input type="date" name="Date_Birth" value="" required class="input-form select-font" />
+                </div>
+
+                <!-- PHONE -->
+                <div class="group-input center-form">
+                    <span class="span-input">
+                       Phone
+                    </span>
+                    <input type="number" name="Phone" required value="" class="input-form select-font" />
+                </div>
+                   
+                <!-- GENDER -->
+                <div class="group-input center-form">
+                    <span class="span-input">
+                        Gender
+                    </span>
+                    <select name="Gender" id="Gender" required class="small-input select-font">
+                        <option></option>
+                        <option class="select-font" value="Male">Male</option>
+                        <option class="select-font" value="Female">Female</option>
+                    </select>
+                </div>
+                <br />
+
+                <!-- SUBMIT BUTTON -->
+                <input type="submit" class="btn-black" id="register" value="Register" />
+        </form>
+
+        </div>
+    </div>
+   
+</div>
+   
+         
+
+<!-- MODAL LOGIN -->
+<div id="loginModal" class="modal-div" hidden>
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <span id="closeLogin" class="close">&times;</span>
+            <h2 class="center-text">LOGIN</h2>
+        </div>
+        <div class="modal-body center-text">
+
+            <!-- FORM LOGIN -->
+            <form action="~/Home/Login" method="post">
+                <p id="valid_mail" style="color:red"></p>
+
+                <!-- EMAIL -->
+                <div class="group-input center-form" >
+                    <span class="span-input">Email</span>
+                    <input type="text" name="Mail" class="input-form select-font" required />
+                </div>
+
+                <!-- PASSWORD -->
+                <div class="group-input center-form">
+                    <span class="span-input">
+                        Password
+                    </span>
+                    <input type="password"  name="Pass" class="input-form select-font" required />
+                </div>
+                <br />
+                <!-- SUBMIT BUTTON -->
+                <input type="submit" class="btn-black" value="Login" />
+            </form>
+
+        </div>
+    </div>
+
+</div>
+
+
+    @RenderBody()
+
+<!-- CONTACT INFORMATION   -->
+<div class="contain" style="margin-top: 150px;">
+        <hr />
+        <div class="row-div">
+            <div class="col-5" style="height:250px">
+                <h2 class="center-text">
+                    HOW TO FIND US
+                </h2>
+                <p class="center-text" style="font-weight:bold">
+                    <span class="fa fa-map-marker" style="font-size: 18px;"></span>
+                    155 Su Van Hanh Street, District 10, Ho Chi Minh City.
+                </p>
+                <p class="center-text" style="font-weight:bold">
+                    <span class="fa fa-phone" style="font-size: 18px;"></span> 0123456789
+                </p>
+                <p class="center-text" style="font-weight:bold">
+                    <span class="fa fa-envelope-o" style="font-size: 18px;"></span> abc@gmail.com
+                </p>
+            </div>
+            <div class="col-5 center-text" style="height:250px">
+                <h2 class="center-text">Get More Information</h2>
+                <input type="text" name="name" value="" class="input-text" />
+                <button class="btn-black">GET</button>
+            </div>
+        </div>
+    </div>
+    
+
+
+<!-- FOOTER -->
+<div class="footer">
+        <div class="row-div">
+            <div class="col-3" style="background-color:#333; color:white;margin-top:0px;">
+                <p href="#">Help</p>
+            </div>
+            <div class="col-4" style="background-color:#333; color:white;margin-top:0px;">
+                <p>Made by us</p>
+            </div>
+            <div class="col-3" style="background-color:#333; color:white;margin-top:0px;">
+                <p>Question</p>
+            </div>
+        </div>
+   </div>
+
+ 
+
+
+
+<script>
+    $(document).ready(function () {
+        $('#myBtn').click(function () {
+            $('#myModal').toggle();
+        });
+        $('#close').click(function () {
+            $('#myModal').hide();
+        });
+        $('#btnLogin').click(function () {
+            $('#loginModal').toggle();
+        });
+        $('#closeLogin').click(function () {
+            $('#loginModal').hide();
+        });
+        //$('#Email').change(function () {
+        //    ValidationCustomer();
+        //});
+    });
+</script>

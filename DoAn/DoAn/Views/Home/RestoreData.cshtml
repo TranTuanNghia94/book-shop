@@ -1,0 +1,178 @@
+﻿
+@{
+    ViewBag.Title = "RestoreData";
+}
+
+<script src="~/scripts/jquery-3.4.1.min.js"></script>
+<script src="~/scripts/Restore.js"></script>
+
+<!-- CUSTOMER -->
+<div class="contain">
+    <br />
+    <h1 class="center-text">RESTORE CUSTOMER</h1>
+    <br /><br />
+
+    <!-- CUSTOMER TABLE -->
+    <table class="table table-border" id="table_customer">
+        <thead>
+            <tr class="center-text">
+                <th style="background-color:#333; color: white;">
+                    Last Name
+                </th>
+                <th style="background-color:#333; color: white;">
+                    First Name
+                </th>
+                <th style="background-color:#333; color: white;">
+                    Email
+                </th>
+                <th style="background-color:#333; color: white;">
+                    Role
+                </th>
+                <th style="background-color:#333; color: white;">
+                    Action
+                </th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+        
+    </table> 
+    <br /><br />
+
+    <!-- PAGE NUMBER -->
+    <div class="contain center-text" style="margin: 30px;">
+        @if (ViewBag.Customer == null)
+        {
+            <button class="btn-black">0</button>
+        }
+        @if (ViewBag.Customer != null)
+        {
+            for (int i = 1; i <= ViewBag.Customer; i++)
+            {
+                <button class="btn-black customer-page-number">@i</button>
+            }
+        }
+    </div>
+    <!-- ----------------------------- -->
+
+</div>
+
+<br /><br /><br /><br /><br />
+<hr />
+<br /><br /><br /><br /><br />
+
+<!-- BOOK -->
+<div class="contain">
+    <br />
+    <h1 class="center-text">RESTORE BOOK</h1>
+    <br /><br />
+
+    <!-- TABLE BOOK -->
+    <table class="table table-border" id="table_book">
+        <thead>
+            <tr class="center-text">
+                <th style="background-color:#333; color: white;">
+                    Name
+                </th>
+                <th style="background-color:#333; color: white;">
+                    Author
+                </th>
+                <th style="background-color:#333; color: white;">
+                    Genre
+                </th>
+                <th style="background-color:#333; color: white;">
+                    Price
+                </th>
+                <th style="background-color:#333; color: white;">
+                    Action
+                </th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+        
+    </table>
+
+    <!-- PAGE NUMBER -->
+    <div class="contain center-text" style="margin: 30px;">
+        @if (ViewBag.Book == null)
+        {
+            <button class="btn-black">0</button>
+        }
+        @if (ViewBag.Book != null)
+        {
+            for (int i = 1; i <= ViewBag.Book; i++)
+            {
+                <button class="btn-black book-page-number">@i</button>
+            }
+        }
+    </div>
+    <!-- ----------------------------- -->
+
+</div>
+
+<br /><br /><br /><br /><br />
+<hr />
+<br /><br /><br /><br /><br />
+
+<!-- GENRE -->
+<div class="contain">
+    <br />
+    <h1 class="center-text">RESTORE GENRE</h1>
+    <br /><br />
+
+    <!-- TABLE GENRE -->
+    <table class="table table-border" id="table_genre">
+        <thead>
+            <tr class="center-text">
+                <th style="background-color:#333; color: white;">
+                    Genre
+                </th>
+                <th  style="background-color:#333; color: white;">
+                    Action
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @if(ViewBag.Genre != null)
+            {
+                foreach(var item in ViewBag.Genre)
+                {
+                    <tr class="center-text">
+                        <th>
+                            @item.genre
+                        </th>
+                        <th>
+                            <a href="~/Book/UnlockGenre/@item.id" class="btn-black">Restore</a>
+                        </th>
+                    </tr>
+                }
+            }
+        </tbody>
+
+    </table>
+</div>
+
+
+
+<script>
+    $(document).ready(function () {
+        $(".customer-page-number").click(function () {
+            var page = parseInt($(this).html());
+            change_page_customer(page);
+        });
+        function change_page_customer(page) {
+            var number = page || 1;
+            get_lock_customer(number);
+        }
+        $(".book-page-number").click(function () {
+            var page = parseInt($(this).html());
+            change_page_book(page);
+        });
+        function change_page_book(page) {
+            var number = page || 1;
+            get_lock_book(number);
+        }
+        change_page_customer();
+        change_page_book();
+    })
+
+</script>

@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EACEEF9C-BD0C-45E1-AAC4-D36D9B3B1926}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DoAn</RootNamespace>
+    <AssemblyName>DoAn</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="amchart\charts.js" />
+    <Content Include="amchart\core.js" />
+    <Content Include="amchart\deps\canvg.js" />
+    <Content Include="amchart\deps\pdfmake.js" />
+    <Content Include="amchart\deps\xlsx.js" />
+    <Content Include="amchart\lang\ar.js" />
+    <Content Include="amchart\lang\bs_BA.js" />
+    <Content Include="amchart\lang\ca_ES.js" />
+    <Content Include="amchart\lang\cs_CZ.js" />
+    <Content Include="amchart\lang\da_DK.js" />
+    <Content Include="amchart\lang\de_CH.js" />
+    <Content Include="amchart\lang\de_DE.js" />
+    <Content Include="amchart\lang\el_GR.js" />
+    <Content Include="amchart\lang\en.js" />
+    <Content Include="amchart\lang\en_CA.js" />
+    <Content Include="amchart\lang\en_US.js" />
+    <Content Include="amchart\lang\es_ES.js" />
+    <Content Include="amchart\lang\et_EE.js" />
+    <Content Include="amchart\lang\fi_FI.js" />
+    <Content Include="amchart\lang\fr_FR.js" />
+    <Content Include="amchart\lang\he_IL.js" />
+    <Content Include="amchart\lang\hi_IN.js" />
+    <Content Include="amchart\lang\hr_HR.js" />
+    <Content Include="amchart\lang\hu_HU.js" />
+    <Content Include="amchart\lang\id_ID.js" />
+    <Content Include="amchart\lang\it_IT.js" />
+    <Content Include="amchart\lang\ja_JP.js" />
+    <Content Include="amchart\lang\ko_KR.js" />
+    <Content Include="amchart\lang\lt_LT.js" />
+    <Content Include="amchart\lang\lv_LV.js" />
+    <Content Include="amchart\lang\nb_NO.js" />
+    <Content Include="amchart\lang\nl_NL.js" />
+    <Content Include="amchart\lang\pl_PL.js" />
+    <Content Include="amchart\lang\pt_BR.js" />
+    <Content Include="amchart\lang\pt_PT.js" />
+    <Content Include="amchart\lang\ro_RO.js" />
+    <Content Include="amchart\lang\ru_RU.js" />
+    <Content Include="amchart\lang\sl_SL.js" />
+    <Content Include="amchart\lang\sr_RS.js" />
+    <Content Include="amchart\lang\sv_SE.js" />
+    <Content Include="amchart\lang\th_TH.js" />
+    <Content Include="amchart\lang\tr_TR.js" />
+    <Content Include="amchart\lang\vi_VN.js" />
+    <Content Include="amchart\lang\zh_Hans.js" />
+    <Content Include="amchart\lang\zh_Hant.js" />
+    <Content Include="amchart\maps.js" />
+    <Content Include="amchart\plugins\forceDirected.js" />
+    <Content Include="amchart\plugins\regression.js" />
+    <Content Include="amchart\plugins\sliceGrouper.js" />
+    <Content Include="amchart\plugins\sunburst.js" />
+    <Content Include="amchart\plugins\wordCloud.js" />
+    <Content Include="amchart\themes\amcharts.js" />
+    <Content Include="amchart\themes\amchartsdark.js" />
+    <Content Include="amchart\themes\animated.js" />
+    <Content Include="amchart\themes\dark.js" />
+    <Content Include="amchart\themes\dataviz.js" />
+    <Content Include="amchart\themes\frozen.js" />
+    <Content Include="amchart\themes\kelly.js" />
+    <Content Include="amchart\themes\material.js" />
+    <Content Include="amchart\themes\moonrisekingdom.js" />
+    <Content Include="amchart\themes\spiritedaway.js" />
+    <Content Include="Content\customer.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\Main.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="scripts\ai.0.22.9-build00167.js" />
+    <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="scripts\Book.js" />
+    <Content Include="scripts\Customer.js" />
+    <Content Include="amchart\CHANGELOG.md" />
+    <Content Include="amchart\charts.js.map" />
+    <Content Include="amchart\core.js.map" />
+    <Content Include="amchart\LICENSE" />
+    <Content Include="amchart\maps.js.map" />
+    <Content Include="amchart\README.md" />
+    <Content Include="amchart\themes\amcharts.js.map" />
+    <Content Include="amchart\themes\amchartsdark.js.map" />
+    <Content Include="amchart\themes\animated.js.map" />
+    <Content Include="amchart\themes\dark.js.map" />
+    <Content Include="amchart\themes\dataviz.js.map" />
+    <Content Include="amchart\themes\frozen.js.map" />
+    <Content Include="amchart\themes\kelly.js.map" />
+    <Content Include="amchart\themes\material.js.map" />
+    <Content Include="amchart\themes\moonrisekingdom.js.map" />
+    <Content Include="amchart\themes\spiritedaway.js.map" />
+    <Content Include="amchart\plugins\forceDirected.js.map" />
+    <Content Include="amchart\plugins\regression.js.map" />
+    <Content Include="amchart\plugins\sliceGrouper.js.map" />
+    <Content Include="amchart\plugins\sunburst.js.map" />
+    <Content Include="amchart\plugins\wordCloud.js.map" />
+    <Content Include="amchart\lang\ar.js.map" />
+    <Content Include="amchart\lang\bs_BA.js.map" />
+    <Content Include="amchart\lang\ca_ES.js.map" />
+    <Content Include="amchart\lang\cs_CZ.js.map" />
+    <Content Include="amchart\lang\da_DK.js.map" />
+    <Content Include="amchart\lang\de_CH.js.map" />
+    <Content Include="amchart\lang\de_DE.js.map" />
+    <Content Include="amchart\lang\el_GR.js.map" />
+    <Content Include="amchart\lang\en.js.map" />
+    <Content Include="amchart\lang\en_CA.js.map" />
+    <Content Include="amchart\lang\en_US.js.map" />
+    <Content Include="amchart\lang\es_ES.js.map" />
+    <Content Include="amchart\lang\et_EE.js.map" />
+    <Content Include="amchart\lang\fi_FI.js.map" />
+    <Content Include="amchart\lang\fr_FR.js.map" />
+    <Content Include="amchart\lang\he_IL.js.map" />
+    <Content Include="amchart\lang\hi_IN.js.map" />
+    <Content Include="amchart\lang\hr_HR.js.map" />
+    <Content Include="amchart\lang\hu_HU.js.map" />
+    <Content Include="amchart\lang\id_ID.js.map" />
+    <Content Include="amchart\lang\it_IT.js.map" />
+    <Content Include="amchart\lang\ja_JP.js.map" />
+    <Content Include="amchart\lang\ko_KR.js.map" />
+    <Content Include="amchart\lang\lt_LT.js.map" />
+    <Content Include="amchart\lang\lv_LV.js.map" />
+    <Content Include="amchart\lang\nb_NO.js.map" />
+    <Content Include="amchart\lang\nl_NL.js.map" />
+    <Content Include="amchart\lang\pl_PL.js.map" />
+    <Content Include="amchart\lang\pt_BR.js.map" />
+    <Content Include="amchart\lang\pt_PT.js.map" />
+    <Content Include="amchart\lang\ro_RO.js.map" />
+    <Content Include="amchart\lang\ru_RU.js.map" />
+    <Content Include="amchart\lang\sl_SL.js.map" />
+    <Content Include="amchart\lang\sr_RS.js.map" />
+    <Content Include="amchart\lang\sv_SE.js.map" />
+    <Content Include="amchart\lang\th_TH.js.map" />
+    <Content Include="amchart\lang\tr_TR.js.map" />
+    <Content Include="amchart\lang\vi_VN.js.map" />
+    <Content Include="amchart\lang\zh_Hans.js.map" />
+    <Content Include="amchart\lang\zh_Hant.js.map" />
+    <Content Include="amchart\deps\canvg.js.map" />
+    <Content Include="amchart\deps\pdfmake.js.map" />
+    <Content Include="amchart\deps\xlsx.js.map" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <None Include="scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="scripts\jquery-3.4.1.js" />
+    <Content Include="scripts\jquery-3.4.1.min.js" />
+    <Content Include="scripts\jquery-3.4.1.slim.js" />
+    <Content Include="scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="scripts\jquery-3.4.1.min.map" />
+    <Content Include="scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="scripts\modernizr-2.6.2.js" />
+    <Content Include="scripts\ReportChart.js" />
+    <Content Include="scripts\Restore.js" />
+    <Content Include="scripts\SearchCustomer.js" />
+    <Content Include="UploadFiles\9786049633461.jpg" />
+    <Content Include="UploadFiles\annie-spratt-749650-unsplash.jpg" />
+    <Content Include="UploadFiles\anthony-tran-378336-unsplash.jpg" />
+    <Content Include="UploadFiles\dam-uoc-mo-se-khong-con-so-haidone.jpg" />
+    <Content Include="UploadFiles\noibuonmauxanhla.jpg" />
+    <Content Include="UploadFiles\photo-1451226428352-cf66bf8a0317.jpg" />
+    <Content Include="UploadFiles\revolt-1306240-unsplash.jpg" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BookController.cs" />
+    <Compile Include="Controllers\CartController.cs" />
+    <Compile Include="Controllers\CustomerController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ReportController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Action\BillAction.cs" />
+    <Compile Include="Models\Action\BookAction.cs" />
+    <Compile Include="Models\Action\CustomerAction.cs" />
+    <Compile Include="Models\Action\GenreAction.cs" />
+    <Compile Include="Models\Action\OrderAction.cs" />
+    <Compile Include="Models\Action\RecordAction.cs" />
+    <Compile Include="Models\Action\ReportAction.cs" />
+    <Compile Include="Models\Book.cs" />
+    <Compile Include="Models\ChartDataDTO.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\DB Connect\DBShop.cs" />
+    <Compile Include="Models\Genre.cs" />
+    <Compile Include="Models\Item.cs" />
+    <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\OrderDetail.cs" />
+    <Compile Include="Models\Record.cs" />
+    <Compile Include="Models\TotalVisit.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Customer\Index.cshtml" />
+    <Content Include="Views\Customer\EditCustomer.cshtml" />
+    <Content Include="Views\Customer\Customer_Info.cshtml" />
+    <Content Include="Views\Book\CreateBook.cshtml" />
+    <Content Include="Views\Book\EditBook.cshtml" />
+    <Content Include="Views\Book\ShowBook.cshtml" />
+    <Content Include="Views\Book\BookDetail.cshtml" />
+    <Content Include="Views\Cart\XemGioHang.cshtml" />
+    <Content Include="Views\Book\BookManager.cshtml" />
+    <Content Include="Views\Cart\MyOrder.cshtml" />
+    <Content Include="Views\Report\BestSellBook.cshtml" />
+    <Content Include="Views\Home\RecordUser.cshtml" />
+    <Content Include="Views\Report\ChartView.cshtml" />
+    <Content Include="Views\Home\RestoreData.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52703</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52703/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

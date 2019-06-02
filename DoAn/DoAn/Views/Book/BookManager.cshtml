@@ -1,0 +1,191 @@
+﻿
+@{
+    ViewBag.Title = "BookManager";
+}
+
+
+<script src="~/scripts/jquery-3.4.1.min.js"></script>
+<script src="~/scripts/Customer.js"></script>
+<script src="~/scripts/Book.js"></script>
+<link href="~/Content/Main.css" rel="stylesheet" />
+<link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+
+
+
+<h1 class="center-text">BOOK MANAGER</h1>
+<div>
+    <!-- BUTTON CREATE BOOK -->
+    <a href="~/Book/CreateBook" class="btn-black" style="float: right; margin-right: 50px;">Create Book</a>
+    <br />
+</div>
+
+<div>
+    <!-- FORM SERACH BOOK  -->
+    <div>
+        <input type="text" style="margin-left: 50px;font-weight:bold" id="Search_Book" value="" class="input-text bad-font" />
+        <button class="btn-black" id="btn_search_book" >Search</button>
+    </div>
+    <!-- -------------------- -->
+    <br />
+
+    <!-- TABLE LIST BOOKS -->
+    <table class="table table-bordered" id="table_book_manger">
+        <thead>
+            <tr>
+                <th style="background-color:#333; color: white;">
+                    Book Name
+                </th>
+                <th style="background-color:#333; color: white;">
+                    Author
+                </th>
+                <th style="background-color:#333; color: white;">
+                    Producer
+                </th>
+                <th style="background-color:#333; color: white;">
+                    Genre
+                </th>
+                <th style="background-color:#333; color: white;">
+                    Price
+                </th>
+                <th style="background-color:#333; color: white;">
+                    Action
+                </th>
+            </tr>
+
+        </thead>
+        <tbody id="content_book"></tbody>
+        
+    </table>
+    <br /><br />
+
+    <!-- PAGE NUMBER OF BOOK -->
+    <div class="contain center-text">
+        @if (ViewBag.PageNumber == null)
+        {
+            <button class="btn-black">0</button>
+        }
+        @if (ViewBag.PageNumber != null)
+        {
+            for (int i = 1; i <= ViewBag.PageNumber; i++)
+            {
+                <button class="btn-black page-number">@i</button>
+            }
+        }
+    </div>
+    <!-- ------------------------------- -->
+</div>
+
+<br /><br /><br /><br />
+<hr />
+<br /><br /><br /><br />
+
+<div class="contain">
+    <h1 class="center-text">LIST OF GENRES</h1>
+    <br /><br />
+    <div>
+        <!--  BUTTON CREATE GENRE -->
+        <button id="btn-genre" class="btn-black" style="float: right; margin-right: 50px;" onclick="$('#modal_create_genre').show()">Create Genre</button>
+    </div><br /><br />
+    <!-- TABLE LIST OF GENRES -->
+    <table class="table table-border">
+        <tr>
+            <th style="background-color:#333; color: white;">
+                Name
+            </th>
+            <th style="background-color:#333; color: white;">
+                Action
+            </th>
+        </tr>
+        @if(ViewBag.Genre != null)
+        {
+            foreach(var item in ViewBag.Genre)
+            {
+                <tr class="center-text">
+                    <!-- GENRE -->
+                    <th>@item.genre</th>
+                    <th>
+                        <a href="#" class="btn-black" onclick="get_genre(@item.id)">Update</a>
+                        <a href="~/Book/DeleteGenre/@item.id" class="btn-black" >Delete</a>
+                    </th>
+                </tr>
+            }
+        }
+    </table>
+</div>
+
+
+
+<!--   CREATE GENRE  -->
+<div id="modal_create_genre" class="modal-position-sticky" hidden >
+    <!-- Modal content-->
+    <div class="modal-content">
+        <div class="modal-header">
+            <span id="closeRole" class="close" onclick="$('#modal_create_genre').hide()">&times;</span>
+            <h2 class="center-text">CREATE GENRE</h2>
+        </div>
+        <div class="modal-body center-text">
+
+            <!-- FORM CREATE GENRE -->
+            <form method="post" action="~/Book/CreateGenre">
+                <p hidden style="color:red; font-weight:bold" class="center-text" id="valid_create_genre" ></p>
+                <div class="group-input center-form">
+                    <span class="span-input">Genre</span>
+                    <input type="text" name="Name" id="create_genre" value="" onkeyup="validation_create_genre()" class="input-form select-font" />
+                </div>
+                <br />
+                <button id="btn_create_genre" class="btn-black">Create</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!--   UPDATE GENRE  -->
+<div id="modal_update_genre" class="modal-position-sticky" hidden>
+   
+    <div class="modal-content">
+        <div class="modal-header">
+            <span id="closeRole" class="close" onclick="$('#modal_update_genre').hide()">&times;</span>
+            <h2 class="center-text">UPDATE GENRE</h2>
+        </div>
+        <div class="modal-body center-text">
+
+            <!-- FORM UPDATE GENRE -->
+            <form method="post" action="/Book/UpdateGenre">
+                <input type="hidden" id="id_customer" name="ID" value="" />
+                <p hidden style="color:red; font-weight:bold" class="center-text" id="valid_update_genre"></p>
+                <div class="group-input center-form">
+                    <span class="span-input">Genre</span>
+                    <input type="text" id="txt_update_genre" value="" name="Name" onkeyup="validation_update_genre()" class="input-form select-font" />
+                </div>
+                <br />
+                <button id="btn_update_genre" class="btn-black" >Update</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script>
+    $(document).ready(function () {
+        $("#btn_search_book").click(function () {
+            find_book();
+        });
+        $(".page-number").click(function () {
+            var page = parseInt($(this).html());
+            change_page(page);
+        });
+        function change_page(page) {
+            var number = page || 1;
+            book_manger(number);
+        }
+        change_page();
+
+    })
+</script>

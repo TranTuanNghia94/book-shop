@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "ChartView";
+}
+
+
+
+<style>
+    #chartdiv {
+        width: 100%;
+        height: 500px;
+    }
+</style>
+
+<!-- Resources -->
+
+<script src="~/amchart/core.js"></script>
+<script src="~/amchart/charts.js"></script>
+<script src="~/amchart/themes/animated.js"></script>
+<script src="~/scripts/jquery-3.4.1.min.js"></script>
+<script src="~/scripts/ReportChart.js"></script>
+
+<!-- HTML -->
+<div class="contain center-text">
+    <br />
+    <h1>MONTHLY VISITORS</h1>
+    <br />
+    <br />
+    <div id="chartdiv" style="width: 100%; max-height: 500px;height: 100vh;">
+    </div>
+</div>
+
+
+
+
+
+<script>
+    $(document).ready(function () {
+        get_data_visit();
+    })
+    
+</script>
+

@@ -1,0 +1,302 @@
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\ApplicationInsights.config
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\roslyn\csc.exe
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\roslyn\System.Collections.Immutable.dll
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\roslyn\System.Reflection.Metadata.dll
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\roslyn\vbc.exe
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\roslyn\VBCSCompiler.exe
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\roslyn\VBCSCompiler.exe.config
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\DoAn.dll.config
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\DoAn.dll
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\DoAn.pdb
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\EntityFramework.dll
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\EntityFramework.SqlServer.dll
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\Microsoft.AI.DependencyCollector.dll
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\Microsoft.AI.Web.dll
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\Microsoft.AI.WindowsServer.dll
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\Microsoft.ApplicationInsights.dll
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\Microsoft.Web.Infrastructure.dll
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\System.Web.Helpers.dll
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\System.Web.Mvc.dll
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\System.Web.Razor.dll
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\System.Web.Webpages.Deployment.dll
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\System.Web.Webpages.dll
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\System.Web.Webpages.Razor.dll
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\EntityFramework.xml
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\EntityFramework.SqlServer.xml
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\Microsoft.AI.DependencyCollector.xml
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\Microsoft.AI.Web.xml
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\Microsoft.AI.WindowsServer.xml
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\Microsoft.ApplicationInsights.xml
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\System.Web.Razor.xml
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\System.Web.Webpages.xml
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\System.Web.Webpages.Deployment.xml
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\System.Web.Webpages.Razor.xml
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\System.Web.Helpers.xml
+D:\Đồ Án 1\BT\DoAn\DoAn\bin\System.Web.Mvc.xml
+D:\Đồ Án 1\BT\DoAn\DoAn\obj\Debug\DoAn.csprojResolveAssemblyReference.cache
+D:\Đồ Án 1\BT\DoAn\DoAn\obj\Debug\DoAn.dll
+D:\Đồ Án 1\BT\DoAn\DoAn\obj\Debug\DoAn.pdb
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\ApplicationInsights.config
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\roslyn\csc.exe
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\roslyn\vbc.exe
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\roslyn\VBCSCompiler.exe
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\DoAn.dll.config
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\DoAn.dll
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\DoAn.pdb
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\EntityFramework.dll
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\EntityFramework.SqlServer.dll
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\Microsoft.AI.Web.dll
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\Microsoft.ApplicationInsights.dll
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\System.Web.Helpers.dll
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\System.Web.Mvc.dll
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\System.Web.Razor.dll
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\System.Web.Webpages.Deployment.dll
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\System.Web.Webpages.dll
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\System.Web.Webpages.Razor.dll
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\EntityFramework.xml
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\EntityFramework.SqlServer.xml
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\Microsoft.AI.Web.xml
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\Microsoft.ApplicationInsights.xml
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\System.Web.Razor.xml
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\System.Web.Webpages.xml
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\System.Web.Webpages.Deployment.xml
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\System.Web.Webpages.Razor.xml
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\System.Web.Helpers.xml
+C:\Users\DELL\Downloads\DoAn\DoAn\bin\System.Web.Mvc.xml
+C:\Users\DELL\Downloads\DoAn\DoAn\obj\Debug\DoAn.dll
+C:\Users\DELL\Downloads\DoAn\DoAn\obj\Debug\DoAn.pdb
+C:\Users\DELL\Downloads\DoAn\DoAn\obj\Debug\DoAn.csprojResolveAssemblyReference.cache
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\obj\Debug\DoAn.csprojAssemblyReference.cache
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\obj\Debug\DoAn.csproj.CoreCompileInputs.cache
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\obj\Debug\DoAn.dll
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\obj\Debug\DoAn.pdb
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\ApplicationInsights.config
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\roslyn\csc.exe
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\roslyn\vbc.exe
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\roslyn\VBCSCompiler.exe
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\DoAn.dll.config
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\DoAn.dll
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\DoAn.pdb
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\EntityFramework.dll
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\EntityFramework.SqlServer.dll
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\Microsoft.AI.Web.dll
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\System.Web.Helpers.dll
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\System.Web.Mvc.dll
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\System.Web.Razor.dll
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\System.Web.Webpages.dll
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\System.Web.Webpages.Razor.dll
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\EntityFramework.xml
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\EntityFramework.SqlServer.xml
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\Microsoft.AI.Web.xml
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\System.Web.Razor.xml
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\System.Web.Webpages.xml
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\System.Web.Webpages.Razor.xml
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\System.Web.Helpers.xml
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\bin\System.Web.Mvc.xml
+C:\Users\Irvin\Desktop\poject\DoAn\DoAn\obj\Debug\DoAn.csproj.CopyComplete
+E:\poject\DoAn\DoAn\obj\Debug\DoAn.csprojResolveAssemblyReference.cache
+E:\poject\DoAn\DoAn\obj\Debug\DoAn.dll
+E:\poject\DoAn\DoAn\obj\Debug\DoAn.pdb
+E:\poject\DoAn\DoAn\bin\ApplicationInsights.config
+E:\poject\DoAn\DoAn\bin\roslyn\csc.exe
+E:\poject\DoAn\DoAn\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\poject\DoAn\DoAn\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\poject\DoAn\DoAn\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\poject\DoAn\DoAn\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\poject\DoAn\DoAn\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\poject\DoAn\DoAn\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\poject\DoAn\DoAn\bin\roslyn\System.Collections.Immutable.dll
+E:\poject\DoAn\DoAn\bin\roslyn\System.Reflection.Metadata.dll
+E:\poject\DoAn\DoAn\bin\roslyn\vbc.exe
+E:\poject\DoAn\DoAn\bin\roslyn\VBCSCompiler.exe
+E:\poject\DoAn\DoAn\bin\roslyn\VBCSCompiler.exe.config
+E:\poject\DoAn\DoAn\bin\DoAn.dll.config
+E:\poject\DoAn\DoAn\bin\DoAn.dll
+E:\poject\DoAn\DoAn\bin\DoAn.pdb
+E:\poject\DoAn\DoAn\bin\EntityFramework.dll
+E:\poject\DoAn\DoAn\bin\EntityFramework.SqlServer.dll
+E:\poject\DoAn\DoAn\bin\Microsoft.AI.Agent.Intercept.dll
+E:\poject\DoAn\DoAn\bin\Microsoft.AI.DependencyCollector.dll
+E:\poject\DoAn\DoAn\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\poject\DoAn\DoAn\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\poject\DoAn\DoAn\bin\Microsoft.AI.Web.dll
+E:\poject\DoAn\DoAn\bin\Microsoft.AI.WindowsServer.dll
+E:\poject\DoAn\DoAn\bin\Microsoft.ApplicationInsights.dll
+E:\poject\DoAn\DoAn\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\poject\DoAn\DoAn\bin\Microsoft.Web.Infrastructure.dll
+E:\poject\DoAn\DoAn\bin\System.Web.Helpers.dll
+E:\poject\DoAn\DoAn\bin\System.Web.Mvc.dll
+E:\poject\DoAn\DoAn\bin\System.Web.Razor.dll
+E:\poject\DoAn\DoAn\bin\System.Web.Webpages.Deployment.dll
+E:\poject\DoAn\DoAn\bin\System.Web.Webpages.dll
+E:\poject\DoAn\DoAn\bin\System.Web.Webpages.Razor.dll
+E:\poject\DoAn\DoAn\bin\EntityFramework.xml
+E:\poject\DoAn\DoAn\bin\EntityFramework.SqlServer.xml
+E:\poject\DoAn\DoAn\bin\Microsoft.AI.DependencyCollector.xml
+E:\poject\DoAn\DoAn\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\poject\DoAn\DoAn\bin\Microsoft.AI.Web.xml
+E:\poject\DoAn\DoAn\bin\Microsoft.AI.WindowsServer.xml
+E:\poject\DoAn\DoAn\bin\Microsoft.ApplicationInsights.xml
+E:\poject\DoAn\DoAn\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\poject\DoAn\DoAn\bin\System.Web.Razor.xml
+E:\poject\DoAn\DoAn\bin\System.Web.Webpages.xml
+E:\poject\DoAn\DoAn\bin\System.Web.Webpages.Deployment.xml
+E:\poject\DoAn\DoAn\bin\System.Web.Webpages.Razor.xml
+E:\poject\DoAn\DoAn\bin\System.Web.Helpers.xml
+E:\poject\DoAn\DoAn\bin\System.Web.Mvc.xml
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\ApplicationInsights.config
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\roslyn\csc.exe
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\roslyn\System.Collections.Immutable.dll
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\roslyn\System.Reflection.Metadata.dll
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\roslyn\vbc.exe
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\roslyn\VBCSCompiler.exe
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\roslyn\VBCSCompiler.exe.config
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\DoAn.dll.config
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\DoAn.dll
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\DoAn.pdb
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\EntityFramework.dll
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\EntityFramework.SqlServer.dll
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\Microsoft.AI.DependencyCollector.dll
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\Microsoft.AI.Web.dll
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\Microsoft.AI.WindowsServer.dll
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\Microsoft.ApplicationInsights.dll
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\Microsoft.Web.Infrastructure.dll
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\System.Web.Helpers.dll
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\System.Web.Mvc.dll
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\System.Web.Razor.dll
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\System.Web.Webpages.Deployment.dll
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\System.Web.Webpages.dll
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\System.Web.Webpages.Razor.dll
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\EntityFramework.xml
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\EntityFramework.SqlServer.xml
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\Microsoft.AI.DependencyCollector.xml
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\Microsoft.AI.Web.xml
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\Microsoft.AI.WindowsServer.xml
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\Microsoft.ApplicationInsights.xml
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\System.Web.Razor.xml
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\System.Web.Webpages.xml
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\System.Web.Webpages.Deployment.xml
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\System.Web.Webpages.Razor.xml
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\System.Web.Helpers.xml
+D:\Đồ Án 1\poject\DoAn\DoAn\bin\System.Web.Mvc.xml
+D:\Đồ Án 1\poject\DoAn\DoAn\obj\Debug\DoAn.csprojResolveAssemblyReference.cache
+D:\Đồ Án 1\poject\DoAn\DoAn\obj\Debug\DoAn.dll
+D:\Đồ Án 1\poject\DoAn\DoAn\obj\Debug\DoAn.pdb
+D:\PET SHOP\poject\DoAn\DoAn\bin\ApplicationInsights.config
+D:\PET SHOP\poject\DoAn\DoAn\bin\roslyn\csc.exe
+D:\PET SHOP\poject\DoAn\DoAn\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\PET SHOP\poject\DoAn\DoAn\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\PET SHOP\poject\DoAn\DoAn\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\PET SHOP\poject\DoAn\DoAn\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\PET SHOP\poject\DoAn\DoAn\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\PET SHOP\poject\DoAn\DoAn\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\PET SHOP\poject\DoAn\DoAn\bin\roslyn\System.Collections.Immutable.dll
+D:\PET SHOP\poject\DoAn\DoAn\bin\roslyn\System.Reflection.Metadata.dll
+D:\PET SHOP\poject\DoAn\DoAn\bin\roslyn\vbc.exe
+D:\PET SHOP\poject\DoAn\DoAn\bin\roslyn\VBCSCompiler.exe
+D:\PET SHOP\poject\DoAn\DoAn\bin\roslyn\VBCSCompiler.exe.config
+D:\PET SHOP\poject\DoAn\DoAn\bin\DoAn.dll.config
+D:\PET SHOP\poject\DoAn\DoAn\bin\DoAn.dll
+D:\PET SHOP\poject\DoAn\DoAn\bin\DoAn.pdb
+D:\PET SHOP\poject\DoAn\DoAn\bin\EntityFramework.dll
+D:\PET SHOP\poject\DoAn\DoAn\bin\EntityFramework.SqlServer.dll
+D:\PET SHOP\poject\DoAn\DoAn\bin\Microsoft.AI.Agent.Intercept.dll
+D:\PET SHOP\poject\DoAn\DoAn\bin\Microsoft.AI.DependencyCollector.dll
+D:\PET SHOP\poject\DoAn\DoAn\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\PET SHOP\poject\DoAn\DoAn\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\PET SHOP\poject\DoAn\DoAn\bin\Microsoft.AI.Web.dll
+D:\PET SHOP\poject\DoAn\DoAn\bin\Microsoft.AI.WindowsServer.dll
+D:\PET SHOP\poject\DoAn\DoAn\bin\Microsoft.ApplicationInsights.dll
+D:\PET SHOP\poject\DoAn\DoAn\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\PET SHOP\poject\DoAn\DoAn\bin\Microsoft.Web.Infrastructure.dll
+D:\PET SHOP\poject\DoAn\DoAn\bin\System.Web.Helpers.dll
+D:\PET SHOP\poject\DoAn\DoAn\bin\System.Web.Mvc.dll
+D:\PET SHOP\poject\DoAn\DoAn\bin\System.Web.Razor.dll
+D:\PET SHOP\poject\DoAn\DoAn\bin\System.Web.Webpages.Deployment.dll
+D:\PET SHOP\poject\DoAn\DoAn\bin\System.Web.Webpages.dll
+D:\PET SHOP\poject\DoAn\DoAn\bin\System.Web.Webpages.Razor.dll
+D:\PET SHOP\poject\DoAn\DoAn\bin\EntityFramework.xml
+D:\PET SHOP\poject\DoAn\DoAn\bin\EntityFramework.SqlServer.xml
+D:\PET SHOP\poject\DoAn\DoAn\bin\Microsoft.AI.DependencyCollector.xml
+D:\PET SHOP\poject\DoAn\DoAn\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\PET SHOP\poject\DoAn\DoAn\bin\Microsoft.AI.Web.xml
+D:\PET SHOP\poject\DoAn\DoAn\bin\Microsoft.AI.WindowsServer.xml
+D:\PET SHOP\poject\DoAn\DoAn\bin\Microsoft.ApplicationInsights.xml
+D:\PET SHOP\poject\DoAn\DoAn\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\PET SHOP\poject\DoAn\DoAn\bin\System.Web.Razor.xml
+D:\PET SHOP\poject\DoAn\DoAn\bin\System.Web.Webpages.xml
+D:\PET SHOP\poject\DoAn\DoAn\bin\System.Web.Webpages.Deployment.xml
+D:\PET SHOP\poject\DoAn\DoAn\bin\System.Web.Webpages.Razor.xml
+D:\PET SHOP\poject\DoAn\DoAn\bin\System.Web.Helpers.xml
+D:\PET SHOP\poject\DoAn\DoAn\bin\System.Web.Mvc.xml
+D:\PET SHOP\poject\DoAn\DoAn\obj\Debug\DoAn.dll
+D:\PET SHOP\poject\DoAn\DoAn\obj\Debug\DoAn.pdb
+D:\PET SHOP\poject\DoAn\DoAn\obj\Debug\DoAn.csprojResolveAssemblyReference.cache

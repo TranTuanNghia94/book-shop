@@ -1,0 +1,90 @@
+﻿@model DoAn.Models.Customer
+@{
+    ViewBag.Title = "EditCustomer";
+}
+
+
+<h2 class="center-text">Update Information</h2>
+<div>
+    <form action="~/Customer/EditCustomer" method="post">
+        <input type="hidden" name="Id" value="@ViewBag.Customer.id_customer" />
+        <p id="valid" style="color:red" class="center-text"></p>
+        <div class="group-input center-form">
+            <span class="span-input">Email</span>
+            <input type="text" id="Mail" name="Email" class="input-form select-font" value="@ViewBag.Customer.email" required />
+        </div>
+
+        <div class="group-input center-form">
+            <span class="span-input">
+                First Name
+            </span>
+            <input type="text" name="First_name" class="input-form select-font" value="@ViewBag.Customer.first_name" required />
+        </div>
+
+
+        <div class="group-input center-form">
+            <span class="span-input">
+                Last Name
+            </span>
+            <input type="text" name="Last_name" class="input-form select-font" value="@ViewBag.Customer.last_name" required />
+        </div>
+
+        <div class="group-input center-form">
+            <span class="span-input">
+                Password
+            </span>
+            <input type="password" name="Password" class="input-form select-font" value="@ViewBag.Customer.password" required />
+        </div>
+
+        <div class="group-input center-form">
+            <span class="span-input">
+                Address
+            </span>
+            <input type="text" name="Address" class="input-form select-font" value="@ViewBag.Customer.address" required />
+        </div>
+
+        <div class="group-input center-form">
+            <span class="span-input">
+                Date
+            </span>
+            <input type="text" name="Date_Birth" value="@ViewBag.Customer.date" required class="input-form select-font" />
+        </div>
+
+        <div class="group-input center-form">
+            <span class="span-input">
+                Phone
+            </span>
+            <input type="number" name="Phone" required value="@ViewBag.Customer.phone" class="input-form select-font" />
+        </div>
+
+        <div class="group-input center-form">
+            <span class="span-input">
+                Gender
+            </span>
+            <select name="Gender"  required class="small-input select-font">
+                <option></option>
+                <option class="select-font" value="Male">Male</option>
+                <option class="select-font" value="Female">Female</option>
+            </select>
+        </div>
+        <br />
+        <div class="center-text">
+            <button type="submit" class="btn-black" id="update">Update </button>
+        </div>
+        
+    </form>
+</div>
+
+
+
+
+<script>
+    $(document).ready(function () {
+        $('#Mail').change(function () {
+            ExistCustomer();
+        });
+        
+        
+
+    })
+</script>

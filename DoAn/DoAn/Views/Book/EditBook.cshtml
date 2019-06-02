@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewBag.Title = "EditBook";
+}
+<script src="~/scripts/jquery-3.4.1.min.js"></script>
+<script src="~/scripts/Book.js"></script>
+
+
+<h2 class="center-text">EDIT BOOK</h2>
+<div class="form_book text-center">
+
+    <!-- FORM EDIT -->
+    <form a="~/Book/EditBook" method="post" >
+        <input type="hidden" name="Id" value="@ViewBag.Book.id_sach" />
+        <p id="valid_book" class="center-text" style="color:red"></p>
+
+        <!-- TITTLE -->
+        <div class="group-input center-form">
+            <span class="span-input">Name</span>
+            <input class="input-form select-font" type="text" name="Ten_Sach" id="Ten_Sach" value="@ViewBag.Book.ten_sach" required/>
+        </div>
+
+        <!-- GENRE -->
+        <div class="group-input center-form">
+            <span class="span-input">Genre</span>
+            <select name="The_Loai" class="input-form select-font" required>
+                <option value=""></option>
+                @if (ViewBag.Genre != null)
+                {
+                    foreach (var item in ViewBag.Genre)
+                    {
+                        <option value="@item.genre">@item.genre</option>
+                    }
+
+                }
+            </select>
+        </div>
+
+
+        <!-- AUTHOR -->
+        <div class="group-input center-form">
+            <span class="span-input">Author</span>
+            <input class="input-form select-font" type="text" name="Tac_Gia" value="@ViewBag.Book.tac_gia" required />
+        </div>
+
+        <!-- PRODUCER -->
+        <div class="group-input center-form">
+            <span class="span-input">Producer</span>
+            <input class="input-form select-font" type="text" name="Nha_Xuat_Ban" value="@ViewBag.Book.nha_xuat_ban" required />
+        </div>
+
+        <!-- PRICE -->
+        <div class="group-input center-form">
+            <span class="span-input">Price</span>
+            <input class="input-form select-font" type="text" name="Gia_Ban" value="@ViewBag.Book.gia_ban" required />
+        </div>
+
+        <!-- CONTENT -->
+        <div class="group-input center-form">
+            <span class="span-input">Description</span>
+            <input class="input-form select-font" type="text" name="Mo_Ta" value="@ViewBag.Book.mo_ta" required />
+        </div><br />
+
+        <!-- SUBMIT BUTTON -->
+        <div class="center-text">
+            <input class="btn-black" type="submit" name="name" id="regist" value="Create Book" />
+        </div>
+    </form>
+    <!-- -------------------------------------- -->
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('#Ten_Sach').change(function () {
+            ValidationBook();
+        });
+
+    })
+</script>

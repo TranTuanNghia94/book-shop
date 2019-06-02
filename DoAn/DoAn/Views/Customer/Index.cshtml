@@ -1,0 +1,135 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+   
+}
+<script src="~/scripts/Customer.js"></script>
+<link href="~/Content/Main.css" rel="stylesheet" />
+<link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+
+
+
+<div  >
+    <!-- 	CUSTOMER LIST -->
+    <div >
+        <h1 class="center-text">CUSTOMERS</h1><br>
+
+        <!-- FORM SEARCH CUSTOMER -->
+        <input type="text" name="name" id="searchMail" value="" class="input-text bad-font" style="margin-left: 40px; font-weight:bold" />
+        <button class="btn-black" id="searchCustomer">Search</button>
+        <!-- ---------------------------- -->
+        <br /><br />
+
+        <!--  TABLE LIST CUSTOMERS -->
+        <table id="tblCustomer" class="table table-border">
+            <thead>
+                <tr class="center-text">
+                    <th style="background-color:#333; color: white;">FIRST NAME</th>
+                    <th style="background-color:#333; color: white;">EMAIL</th>
+                    <th style="background-color:#333; color: white;">DELETE</th>
+                    <th style="background-color:#333; color: white;">ROLE</th>
+                    <th style="background-color:#333; color: white;">ACTION</th>
+                </tr>
+            </thead>
+            <tbody id="contentCustomer" class="center-text" style="font-weight:bold">
+             
+
+             </tbody>
+        </table>
+        <br />
+        <!--- PAGE NUMBER  -->
+        <div class="contain center-text">
+            @if (ViewBag.Page == null)
+            {
+                <button class="btn-black">0</button>
+            }
+            @if (ViewBag.Page != null)
+            {
+                for (int i = 1; i <= ViewBag.Page; i++)
+                {
+                    <button class="btn-black page-number">@i</button>
+                }
+            }
+        </div>
+        <!-- ------------------------------- -->
+
+
+    </div>
+</div>
+
+<!--   CREATE STAFF  -->
+<div id="createstaff" class="modal-position-top" hidden>
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span id="closeRole" class="close">&times;</span>
+                <h2 class="center-text">UPDATE ROLE</h2>
+            </div>
+            <div class="modal-body center-text">
+
+                <!-- FORM CREATE STAFF -->
+                <form method="post">
+                    <input type="hidden" id="id_customer" value="" />
+
+                    <!-- EMAIL -->
+                    <div class="group-input center-form">
+                        <span class="span-input">Email</span>
+                        <input type="text" id="email_customer" value="" disabled class="input-form select-font" />
+                    </div>
+
+                    <!-- FIRST NAME -->
+                    <div class="group-input center-form">
+                        <span class="span-input">First Name</span>
+                        <input type="text" id="firstname_customer" value="" disabled class="input-form select-font" />
+                    </div>
+
+                    <!-- LAST NAME -->
+                    <div class="group-input center-form">
+                        <span class="span-input">Last Name</span>
+                        <input type="text" id="lastname_customer" value="" disabled class="input-form select-font" />
+                    </div>
+
+                    <!-- SET ROLE -->
+                    <div class="group-input center-form">
+                        <span class="span-input">Role</span>
+                        <select name="Role" id="role_customer" class="bad-font small-input" style="font-weight:bold" required>
+                            <option value=""></option>
+                            <option style="font-weight:bold" value="guest">Guest</option>
+                            <option style="font-weight:bold" value="staff">Staff</option>
+                            <option style="font-weight:bold" value="admin">Admin</option>
+                        </select>
+                    </div>
+                    <br />
+                    <!-- BUTTON SUBMIT -->
+                    <button id="update_role" class="btn-black" onclick="CreateStaff()">Update</button>
+                </form>
+                <!-- ------------------------------- -->
+
+            </div>
+        </div>
+</div>
+
+
+
+
+
+<script>
+    $(document).ready(function () {
+        
+        $('#closeRole').click(function () {
+            $('#createstaff').hide();
+        });
+        $('#searchCustomer').click(function () {
+            SearchCustomer();
+        });
+        $(".page-number").click(function () {
+            var page = parseInt($(this).html());
+            change_page(page);
+        });
+        function change_page(page) {
+            var number = page || 1;
+            LoadCustomer(number);
+        }
+        change_page();
+    });
+</script>

@@ -1,0 +1,21 @@
+﻿@using DoAn.Models;
+
+@{
+    ViewBag.Title = "MyOrder";
+}
+<script src="~/scripts/Customer.js"></script>
+<link href="~/Content/Main.css" rel="stylesheet" />
+<link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+
+
+
+<div class="contain center-text">
+    
+    @if (ViewBag.KH != null)
+    {
+        <h1>Confirm Bill Successful</h1>
+        <h2>We will sent products to @ViewBag.KH.address </h2>
+        <h4>Thank You For Using Our Services</h4>
+    }
+    
+</div>

@@ -1,0 +1,74 @@
+﻿
+@{
+    ViewBag.Title = "ShowBook";
+}
+
+<script src="~/scripts/Book.js"></script>
+<script src="~/scripts/jquery-3.4.1.min.js"></script>
+<link href="~/Content/Main.css" rel="stylesheet" />
+<link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+
+
+<!-- BANNER  -->
+<div class="quote-header">
+    <h2 class="center-text header-title">
+        “A book is a gift you can open again and again.” – Garrison Keillor
+    </h2>
+</div>
+
+
+<div class="contain" style="margin-bottom:50px;">
+    <div class="row-div center-text">
+       <div class="col-3" style="height: 90px;">
+           <hr class="category-book" />
+       </div>
+       <div class="col-4">
+           <h3 style="font-weight:bold">“a book is a dream you hold in your hands.”</h3>
+       </div>
+       <div class="col-3" style="height: 90px;">
+           <hr class="category-book" />
+       </div>
+        <input type="hidden" name="name" id="login" value="@Session["id"]" />
+    </div>
+    <div class="row-div" id="row_book">
+        
+    </div>
+</div>
+<br />
+<!-- PAGE NUMBER -->
+<div class="contain center-text">
+     @if(ViewBag.PageNumber == null)
+     {
+         <button class="btn-black">0</button>
+     }
+    @if (ViewBag.PageNumber != null)
+    {
+        for (int i = 1; i <= ViewBag.PageNumber; i++)
+        {
+            <button class="btn-black page-number">@i</button>
+        }
+    }
+</div>
+
+<!-- ------------------------- -->
+
+
+
+
+
+
+<script>
+    $(document).ready(function () {
+        $(".page-number").click(function () {
+            var page = parseInt($(this).html());
+            change_page(page);
+        });
+        function change_page(page) {
+            var number = page || 1;
+            load_book(number);
+        }
+        change_page();
+
+    })
+</script>
+

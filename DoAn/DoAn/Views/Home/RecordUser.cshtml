@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewBag.Title = "RecordUser";
+}
+
+<script src="~/scripts/jquery-3.4.1.min.js"></script>
+<script src="~/scripts/Customer.js"></script>
+
+<div class="contain">
+    <br /><h2 class="center-text" style="font-weight:bold">HISTORY</h2><br />
+    <br />
+
+    <!-- TABLE HISTORY ACTION -->
+    <table class="table table-border" id="table_record">
+        <thead>
+            <tr>
+                <th style="background-color:#333; color: white;">Email</th>
+                <th style="background-color:#333; color: white;">Action</th>
+                <th style="background-color:#333; color: white;">Date</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+       
+    </table>
+
+    <!-- PAGE NUMBER -->
+    <div class="contain center-text" style="margin: 30px;">
+        @if (ViewBag.Page == null)
+        {
+            <button class="btn-black">0</button>
+        }
+        @if (ViewBag.Page != null)
+        {
+            for (int i = 1; i <= ViewBag.Page; i++)
+            {
+                <button class="btn-black page-number">@i</button>
+            }
+        }
+    </div>
+    <!-- ----------------------------- -->
+
+</div>
+
+<script>
+    $(document).ready(function () {
+        $(".page-number").click(function () {
+            var page = parseInt($(this).html());
+            change_page(page);
+        });
+        function change_page(page) {
+            var number = page || 1;
+            Get_Record(number);
+        }
+        change_page();
+
+    })
+</script>

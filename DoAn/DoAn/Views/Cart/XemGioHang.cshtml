@@ -1,0 +1,91 @@
+﻿
+@{
+    ViewBag.Title = "XemGioHang";
+}
+<link href="~/Content/Main.css" rel="stylesheet" />
+<script src="~/scripts/Customer.js"></script>
+<script src="~/scripts/jquery-3.4.1.min.js"></script>
+<link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+
+
+<h2 class="center-text">MY CART</h2>
+<div class="contain">
+    <div>
+        <!-- TABLE CART ITEM -->
+        <table class="table">
+            <tr class="center-text">
+                <th style="background-color:#333; color: white;">Image</th>
+                <th style="background-color:#333; color: white;">Book Name</th>
+                <th style="background-color:#333; color: white;">Author</th>
+                <th style="background-color:#333; color: white;">Price</th>
+                <th style="background-color:#333; color: white;">Quatity</th>
+                <th style="background-color:#333; color: white;">Total</th>
+                <th style="background-color:#333; color: white;"></th>
+            </tr>
+            @if (ViewBag.Cart != null)
+            {
+                foreach (var item in ViewBag.Cart)
+                {
+                    <tr class="center-text">
+                        <!-- IMAGE -->
+                        <td>
+                            <img src="~/UploadFiles/@item.book.hinh" alt="Alternate Text" />
+                        </td>
+
+                        <!-- NAME -->
+                        <th>@item.book.ten_sach</th>
+
+                        <!-- AUTHOR -->
+                        <th>@item.book.tac_gia</th>
+
+                        <!-- PRICE -->
+                        <th>
+                            @{ ViewBag.GiaBan = @item.book.gia_ban;}
+                            @ViewBag.GiaBan &#163;
+                        </th>
+
+                        <!-- QUANTITY -->
+                        <th>@item.so_luong</th>
+
+                        <!-- TOTAL -->
+                        <th>@{             
+                            ViewBag.Total = @item.book.gia_ban *  @item.so_luong;
+                            }
+                        @ViewBag.Total &#163;
+                        </th>
+
+                        <!-- DELETE ITEM -->
+                        <th>
+                            <a href="~/Cart/Remove/@item.book.id_sach" class="title">Delete</a>
+                        </th>
+                    </tr>
+                 }
+            }
+        </table>
+        <!-- ----------------------------------- -->
+
+        <!-- BUTTON CONFIRM BILL AND CLEAR CART  -->
+        @if (ViewBag.Cart != null)
+        {
+            <br />
+            <!-- BUTTON CONFIRM -->
+            <a class="btn-black" href="~/Cart/BuyBook" style="float:right; margin-right: 40px;margin-top: 30px;">
+                Decide To Buy
+            </a>
+
+            <!-- BUTTON CLEAR -->
+            <a class="btn-black" href="~/Cart/RemoveAll" style="float:left; margin-left: 40px;margin-top: 30px;">
+                Remove All
+            </a>
+        }
+        
+        <hr />
+        <br /><br />
+        <!-- BACK TO HOME PAGE -->
+        <a href="~/Book/ShowBook" style="margin-left: 650px;" class="title">Back Home</a>
+        <br /><br /><br /><br />
+    </div>
+</div>
+
+
+
